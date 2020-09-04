@@ -15,10 +15,10 @@ pip install pytube3 # if not work with pytube.
 ``` cd Python-Download-Youtube-Video ```
 
 * Run the download_video.py file: <br>
-``` python download_video.py --url url_youtube_video ```
+``` python download_video.py --url "url_youtube_video" ```
 
 * If you want to download the playlist then run the download_playlist.py: <br>
-``` python download_playlist.py --url url_youtube_playlist ```
+``` python download_playlist.py --url "url_youtube_playlist" ```
 
 ## :heavy_exclamation_mark: Fix Error
 ```
