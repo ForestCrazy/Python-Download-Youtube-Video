@@ -48,11 +48,11 @@ KeyError: 'cipher'
 1. Go to the location where the package was installed. If you don't know where, run the command <br>
 ``` pip show pytube3 ```
 And it'll give you something like this: <br>
-<img src="https://www.img.in.th/images/0ad7211653b048873b2c84951b6a2704.png" alt="pip show pytube3">
+<img src="https://www.img.in.th/images/0ad7211653b048873b2c84951b6a2704.png" alt="pip show pytube3"><br>
 We can see ``` Location: c:\python36-64\lib\site-packages ```
 
 2. Go to that location, open the folder pytube and the file extract.py <br>
-<img src="https://www.img.in.th/images/1ba4b5ef61670de584fd7bdf35bc573b.png" alt="folder pytube">
+<img src="https://www.img.in.th/images/1ba4b5ef61670de584fd7bdf35bc573b.png" alt="folder pytube"><br>
 
 3. In the file, line no. 306 or 301, you will find ``` parse_qs(formats[i]["cipher"])```. If yes, then change ``` "cipher" ``` to ``` "signatureCipher" ```
 So, you'll initially have
