@@ -1,11 +1,18 @@
+import argparse
 from pytube import YouTube
 
-url= 'https://youtu.be/u-GJBlpLoDE?list=RDu-GJBlpLoDE';
+parser = argparse.ArgumentParser()
+parser.add_argument("--url", help="youtube video link",type=str)
+args = parser.parse_args()
 
-youtube = YouTube(url)
+if (args.url):
+    youtube = YouTube(args.url)
 
-video = youtube.streams.first()
+    video = youtube.streams.first()
 
-video.download('download')
+    video.download('download')
 
-print("download video : " + video.title + " success!")
+    print("download video : " + video.title + " success!")
+else:
+    print("Error")
+    parser.print_help()
