@@ -46,7 +46,7 @@ KeyError: 'cipher'
 ```
 
 1. Go to the location where the package was installed. If you don't know where, run the command <br>
-``` pip show pytube3 ```
+``` pip show pytube3 ``` <br>
 And it'll give you something like this: <br>
 <img src="https://www.img.in.th/images/0ad7211653b048873b2c84951b6a2704.png" alt="pip show pytube3"><br>
 We can see ``` Location: c:\python36-64\lib\site-packages ```
